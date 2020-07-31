@@ -4,13 +4,7 @@ import Aux from '../../../hoc/Auxilary/Auxilary'
 import Button from '../../UI/Button/Button'
 
 class OrderSummary extends Component{
-
-    // This could be a functional component for perfrmance testing we made it as class component
-
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        console.log("[OrderSummary] ComponentDidUpdate");
-    }
-
+    
     render() {
 
         const ingredientSummary = Object.keys(this.props.ingredients).map(igKey => {
